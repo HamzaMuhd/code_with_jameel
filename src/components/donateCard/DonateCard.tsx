@@ -36,7 +36,7 @@ const DonateCard = () => {
                         <Text
                         color='black'
                         >Prime Minister</Text>
-                        <Text>Let's Make Canada Great Together</Text>
+                        <Text>Let&apos;s Make Canada Great Together</Text>
                     
                         <Text>Donate by clicking the button below</Text>
                         <Button
