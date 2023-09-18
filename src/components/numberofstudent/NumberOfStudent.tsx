@@ -1,6 +1,17 @@
 'use client'
 
 import { Box, HStack, Heading, Text, VStack } from "@chakra-ui/react";
+import { Roboto, Josefin_Sans } from "next/font/google";
+
+const roboto = Roboto({
+    weight: '100',
+    subsets: ['latin'],
+  })
+
+const josefin_Sans = Josefin_Sans({
+    weight: '300',
+    subsets: ['latin'],
+})
 
 const NumberOfStudent = () => {
     return (
@@ -14,7 +25,7 @@ const NumberOfStudent = () => {
         flexDir='column'
         gap={20}
         >
-            <Heading fontFamily="monospace" >Number of Beneficiaries</Heading>
+            <Heading className={roboto.className} >Number of Beneficiaries</Heading>
            
             <HStack 
             flexDirection={{base:"column", md:"row"}}
@@ -22,15 +33,15 @@ const NumberOfStudent = () => {
             >
                 <VStack>
                     <Heading>23+</Heading>
-                    <Text>HTML,CSS, JavaScript</Text>
+                    <Text className={josefin_Sans.className}>HTML,CSS, JavaScript</Text>
                 </VStack>
                 <VStack>
                     <Heading>12</Heading>
-                    <Text>Frontend Engineers</Text>
+                    <Text className={josefin_Sans.className} >Frontend Engineers</Text>
                 </VStack>
                 <VStack>
                     <Heading>4</Heading>
-                    <Text>Backend Engineers</Text>
+                    <Text className={josefin_Sans.className} >Backend Engineers</Text>
                 </VStack>
             </HStack>
         </Box>

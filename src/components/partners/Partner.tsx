@@ -2,7 +2,17 @@
 
 import { Box, HStack, Heading, Text, VStack } from "@chakra-ui/react";
 import Image from "next/image";
+import { Roboto, Josefin_Sans } from "next/font/google";
 
+const roboto = Roboto({
+    weight: '100',
+    subsets: ['latin'],
+  })
+
+const josefin_Sans = Josefin_Sans({
+    weight: '300',
+    subsets: ['latin'],
+})
 const Partners = () => {
     return (
         <Box
@@ -11,10 +21,12 @@ const Partners = () => {
         px='16px'
         >
             <VStack>
-                <Heading fontFamily="monospace">Partners</Heading>
+                <Heading className={roboto.className}>Partners</Heading>
                 <Text
                 mt={5}
-                mb={10}    
+                mb={10}
+                fontSize={18}
+                className={josefin_Sans.className}    
                 >Collaborators who amplify our mission and drive technology forward with us.</Text>
                 <HStack 
                 flexDir={{base:'column', md:'row'}}

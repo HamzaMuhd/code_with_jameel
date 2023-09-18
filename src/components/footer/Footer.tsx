@@ -2,6 +2,12 @@
 
 import { Box, Heading, Text, List, ListItem, HStack, VStack, Center, Spacer, SimpleGrid, Flex} from "@chakra-ui/react";
 import Link from "next/link";
+import { Roboto } from "next/font/google";
+
+const roboto = Roboto({
+    weight: '100',
+    subsets: ['latin'],
+  })
 
 const Footer = () => {
 
@@ -27,6 +33,7 @@ const Footer = () => {
                 <Box>
                     <Heading 
                     fontSize='24px'
+                    className={roboto.className}
                     >CodeWithJameel</Heading>
                     <Text>freestar Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus luctus consectetur. 
                         Maecenas egestas accumsan justo, 
@@ -35,17 +42,18 @@ const Footer = () => {
                 <Box>
                     <Heading
                     fontSize='24px'
+                    className={roboto.className}
                     >Company</Heading>
                     <List>
                         <ListItem>About</ListItem>
                         <ListItem>Service</ListItem>
-                        <ListItem>Testimonies</ListItem>
                         <ListItem>Team Members</ListItem>
                     </List>
                 </Box>
                 <Box>
                     <Heading
                     fontSize='24px'
+                    className={roboto.className}
                     >Product</Heading>
                     <List>
                         <ListItem>Web Design</ListItem>
@@ -56,6 +64,7 @@ const Footer = () => {
                 <Box>
                     <Heading
                     fontSize='24px'
+                    className={roboto.className}
                     >Social Media</Heading>
                     <Box>
                         <Link href="www.facebook.com">F</Link>

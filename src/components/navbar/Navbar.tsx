@@ -43,7 +43,7 @@ const Navbar = () => {
         justifyContent='space-around'
         alignItems='center'
         >
-            <Heading fontFamily="monospace" fontSize={34} marginTop={3}  zIndex={1} >{heading}</Heading>
+            <Heading fontFamily="monospace" fontSize={34} marginTop={3} fontWeight={200} zIndex={1} >{heading}</Heading>
                 <HStack gap={3}  zIndex={1} >
                     <Link  href="/">Home</Link>
                     <Link href="#about">About</Link>

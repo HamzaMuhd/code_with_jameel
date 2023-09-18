@@ -2,6 +2,17 @@
 
 import { Box, Text, Heading, Input, Textarea, Button, HStack, Spacer, VStack } from "@chakra-ui/react"
 import Image from "next/image";
+import { Roboto, Josefin_Sans } from "next/font/google";
+
+const roboto = Roboto({
+    weight: '100',
+    subsets: ['latin'],
+  })
+
+const josefin_Sans = Josefin_Sans({
+    weight: '300',
+    subsets: ['latin'],
+})
 
 const Contact = () => {
     return (
@@ -14,10 +25,12 @@ const Contact = () => {
         px='16px'
         >
             <VStack>
-            <Heading fontFamily="monospace">Contact Us</Heading>
+            <Heading className={roboto.className}>Contact Us</Heading>
             <Text
             mt={5}
-            mb={5}    
+            mb={5}   
+            fontSize={18}
+            className={josefin_Sans.className} 
             > Reach out to connect, inquire, or share your thoughts. We&apos;re here to assist!.</Text>
             </VStack>
             <HStack

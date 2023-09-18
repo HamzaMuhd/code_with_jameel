@@ -1,6 +1,6 @@
 'use client'
 
-import { Box, Text, Heading, Button, Avatar }  from "@chakra-ui/react"
+import { Box, Text, Heading, Button, Avatar, }  from "@chakra-ui/react"
 import Image from "next/image";
 import Link from "next/link";
 

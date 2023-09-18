@@ -4,6 +4,17 @@ import { Box, Grid, Text, Heading, Button, VStack, HStack, SimpleGrid, Center, F
 import Image from "next/image";
 import Link from "next/link";
 import students from "@/app/students";
+import { Roboto, Josefin_Sans } from "next/font/google";
+
+const roboto = Roboto({
+    weight: '100',
+    subsets: ['latin'],
+  })
+
+const josefin_Sans = Josefin_Sans({
+    weight: '300',
+    subsets: ['latin'],
+})
 
 const StudentGallery = () => {
 
@@ -20,10 +31,12 @@ const StudentGallery = () => {
             flexDir='column'
             
             >
-            <Heading fontFamily="monospace">Members Gallery</Heading>
+            <Heading className={roboto.className}>Members Gallery</Heading>
             <Text
             mt={5}
-            mb={10}    
+            mb={10} 
+            fontSize={18}
+            className={josefin_Sans.className}   
             >Meet our talented individuals powering the community&apos;s innovation and growth.</Text>
             </Box>
 
