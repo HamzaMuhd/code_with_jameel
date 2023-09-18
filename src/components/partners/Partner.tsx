@@ -16,9 +16,9 @@ const josefin_Sans = Josefin_Sans({
 const Partners = () => {
     return (
         <Box
-        mt='80px'
-        mb='80px'
+        mt='150px'
         px='16px'
+        pt='30px'
         >
             <VStack>
                 <Heading className={roboto.className}>Partners</Heading>

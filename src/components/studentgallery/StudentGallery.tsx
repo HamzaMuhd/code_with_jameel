@@ -21,8 +21,9 @@ const StudentGallery = () => {
    
     return (
         <Box
-        mt='80px'
+        mt='150px'
         px='16px'
+        pt='30px'
         >  
             <Box
             display='flex'
@@ -65,14 +66,6 @@ const StudentGallery = () => {
                     </Box>
                 ))}
                 </Flex>
-
-
-
-                <Link href='/'><Text
-                display='flex'
-                justifyContent='flex-end'
-                pr='120px'
-                >View All</Text></Link> 
             
         </Box>
     );

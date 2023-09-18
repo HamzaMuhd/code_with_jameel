@@ -19,8 +19,9 @@ const Service = () => {
     
     return (
         <Box
-        mt='50px'
-        mb='80px'
+        id="service"
+        mt='150px'
+        pt='30px'
         px='16px'
         >
             <VStack>

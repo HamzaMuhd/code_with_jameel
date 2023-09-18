@@ -17,12 +17,14 @@ const josefin_Sans = Josefin_Sans({
 const Contact = () => {
     return (
         <Box
+        id="contact"
         display='flex'
         flexDir='column'
         justifyContent='center'
         alignItems='center'
-        mb='20px'
+        mt='150px'
         px='16px'
+        pt='30px'
         >
             <VStack>
             <Heading className={roboto.className}>Contact Us</Heading>

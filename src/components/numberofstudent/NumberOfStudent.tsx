@@ -16,6 +16,7 @@ const josefin_Sans = Josefin_Sans({
 const NumberOfStudent = () => {
     return (
         <Box
+        mt='200px'
         w='100vw'
         h='420px'
         bg='#D9D9D9'

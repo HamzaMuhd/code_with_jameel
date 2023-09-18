@@ -23,8 +23,9 @@ const LatestProjects = () => {
         flexDir="column"
         justifyContent='center'
         alignItems="center"
-        mt='80px'
+        mt='150px'
         px='16px'
+        pt='30px'
         >
             <VStack>
             <Heading fontFamily="monospace" className={roboto.className}>Ongoing Projects</Heading>
@@ -55,11 +56,6 @@ const LatestProjects = () => {
                 </Box>
                 ))}
             </HStack>
-            <Link href='/'><Text
-            display='flex'
-            justifyContent='flex-end'
-            mt='20px'
-            >View All</Text></Link>
             </Box>
         </Box>
     );

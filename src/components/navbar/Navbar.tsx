@@ -3,6 +3,7 @@
 import { Box, HStack, Heading } from "@chakra-ui/react";
 import { Montserrat } from "next/font/google";
 import Link from "next/link";
+import CustomScrollLink from "../scrollLink";
 
 // const links = [
 //     {
@@ -34,7 +35,7 @@ import Link from "next/link";
 //     url: string;
 // }
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
 
     const heading = "<CWJ/>"
     return (
@@ -45,10 +46,10 @@ const Navbar = () => {
         >
             <Heading fontFamily="monospace" fontSize={34} marginTop={3} fontWeight={200} zIndex={1} >{heading}</Heading>
                 <HStack gap={3}  zIndex={1} >
-                    <Link  href="/">Home</Link>
-                    <Link href="#about">About</Link>
-                    <Link href="#service">Service</Link>
-                    <Link href="#contact">Contact</Link>
+                    <CustomScrollLink to="/">Home</CustomScrollLink>
+                    <CustomScrollLink to="about">About</CustomScrollLink>
+                    <CustomScrollLink to="service" >Service</CustomScrollLink>
+                    <CustomScrollLink to="contact">Contact</CustomScrollLink>
                 </HStack>
         </Box>
     );
