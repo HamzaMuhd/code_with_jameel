@@ -2,16 +2,30 @@
 
 import { Box, Heading, Text, List, ListItem, HStack, VStack, Center, Spacer, SimpleGrid, Flex} from "@chakra-ui/react";
 import Link from "next/link";
-import { Roboto } from "next/font/google";
+import { Roboto, Josefin_Sans} from "next/font/google";
+import Image from "next/image";
 
 const roboto = Roboto({
     weight: '100',
     subsets: ['latin'],
   })
 
+const josefin_Sans = Josefin_Sans({
+    weight: '300',
+    subsets: ['latin'],
+})
+
+
+
 const Footer = () => {
 
     const currentDate = new Date().getFullYear()
+    const socialMedia = [
+        { src: 'facebook.svg', alt: "facebook logo" },
+        { src: '/twitter.svg', alt: "twitter logo" },
+        { src: '/instagram.svg', alt: "instagram logo" },
+    ];
+    
     
     return (
         <Box
@@ -22,29 +36,31 @@ const Footer = () => {
         justifyContent='space-around'
         flexDir='column'  
         w="100vw"
-        pt='30px'
+        pt='100px'
+        alignItems='center'
         >  
         <Box 
         display='flex'
         justifyContent='space-around'
-        pl='16px'
-        pb='30px'>
+        pb='100px'>
             <SimpleGrid minChildWidth='180px' gap={20}>
                 <Box>
                     <Heading 
                     fontSize='24px'
                     className={roboto.className}
+                    pb="30px"
                     >CodeWithJameel</Heading>
-                    <Text>freestar Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus luctus consectetur. 
+                    <Text className={josefin_Sans.className}>freestar Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus luctus consectetur. 
                         Maecenas egestas accumsan justo, 
                     </Text>
                 </Box>
                 <Box>
                     <Heading
                     fontSize='24px'
+                    pb="30px"
                     className={roboto.className}
                     >Company</Heading>
-                    <List>
+                    <List className={josefin_Sans.className}>
                         <ListItem>About</ListItem>
                         <ListItem>Service</ListItem>
                         <ListItem>Team Members</ListItem>
@@ -53,9 +69,10 @@ const Footer = () => {
                 <Box>
                     <Heading
                     fontSize='24px'
+                    pb="30px"
                     className={roboto.className}
                     >Product</Heading>
-                    <List>
+                    <List className={josefin_Sans.className}>
                         <ListItem>Web Design</ListItem>
                         <ListItem>Web Development</ListItem>
                         <ListItem>App development</ListItem>
@@ -64,29 +81,33 @@ const Footer = () => {
                 <Box>
                     <Heading
                     fontSize='24px'
+                    pb="30px"
                     className={roboto.className}
                     >Social Media</Heading>
-                    <Box>
-                        <Link href="www.facebook.com">F</Link>
-                        <Link href="www.instagram.com">I</Link>
-                        <Link href="www.twitter.com">T</Link>
-                        <Link href="www.linkedin.com">L</Link>
-                    </Box>
+                <Box display='flex'>
+                    {socialMedia.map((icon) => (
+                        <Box key={icon.alt} display='flex' mr={20} justifyContent="center" alignItems="center" width='38px' height='38px' backgroundColor='white' borderRadius={99}>
+                        <Image 
+                        src={icon.src}
+                        alt={icon.alt}
+                        width={24}
+                        height={24}
+                        />
+                </Box>
+                ))}
+                </Box>
                 </Box>
                 </SimpleGrid>
             </Box>
            
-            <Spacer />
-            <Box>   
-            <Box height='1px' bg='#fff' mb='15px'></Box>   
-                <Box
-                h='50px'
+            <Spacer /> 
+            <Box 
                 display='flex'
-                flexDir={['column', 'row']}
                 justifyContent='space-around'
-                alignItems='center' 
+                pb={20}
+                gap={20}
                 >
-                    <Text>©{currentDate} CodeWithJameel. All rights reserved.</Text>
+                    <Text >©{currentDate} CodeWithJameel. All rights reserved.</Text>
                    
                     <Flex  gap={20}>
                       <Link href='/terms'><Text>Terms</Text> </Link> 
@@ -94,7 +115,6 @@ const Footer = () => {
                     </Flex>  
                 </Box>
             </Box>
-        </Box>
     );
 }
  

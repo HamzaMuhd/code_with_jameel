@@ -71,4 +71,4 @@ const StudentGallery = () => {
     );
 }
  
-export default StudentGallery;
+export default StudentGallery;  
