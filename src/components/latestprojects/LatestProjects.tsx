@@ -32,7 +32,7 @@ const LatestProjects = () => {
         color="white"
         >
             <VStack>
-            <Heading fontFamily="monospace" className={roboto.className}>Ongoing Projects</Heading>
+            <Heading className={roboto.className}>Ongoing Projects</Heading>
             <Text
             mt={5}
             mb={10} 
@@ -48,7 +48,7 @@ const LatestProjects = () => {
             width='25%'
             pt='100px'
             >
-            <Text textAlign="justify" >KashCycle is an innovative and ongoing project initiated by CodeWithJameel, aimed at revolutionizing thrift contribution practices, commonly known as ADASHE within Nigeria and beyond. This digital platform seeks to modernize and streamline the traditional savings and contribution system, making it more accessible, efficient, and secure for users.</Text>
+            <Text textAlign="justify" className={josefin_Sans.className}>KashCycle is an innovative and ongoing project initiated by CodeWithJameel, aimed at revolutionizing thrift contribution practices, commonly known as ADASHE within Nigeria and beyond. This digital platform seeks to modernize and streamline the traditional savings and contribution system, making it more accessible, efficient, and secure for users.</Text>
             </HStack>
             <Link href="https://kashcycle.com.ng" passHref>
                 <Button
