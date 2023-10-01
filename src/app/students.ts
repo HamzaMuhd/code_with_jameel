@@ -3,19 +3,25 @@ const students =[
         "id": "1",
         "name": "SIkirullahi Abdul",
         "position": "Frontend Developer",  
-        "image": "/member.png"      
+        "image": "/sikirullah.jpg"      
     },
     {
-        "id": "2",
-        "name": "Muhammad Bello",
-        "position": "Frontend Developer",  
-        "image": "/member1.png"          
+        "id": "7",
+        "name": "Hamza Muhammad Idris",
+        "position": "Frontend Developer",      
+        "image": "/hamza.jpg"      
     },
     {
         "id": "3",
         "name": "Abdulmannan Tahir",
         "position": "Backend Developer", 
-        "image": "/member2.png"           
+        "image": "/abdul.jpg"           
+    },
+    {
+        "id": "2",
+        "name": "Muhammad Bello",
+        "position": "Frontend Developer",  
+        "image": "/muhammad.jpg"          
     },
     {
         "id": "4",
@@ -27,13 +33,13 @@ const students =[
         "id": "5",
         "name": "Benjamin Enoch",
         "position": "Frontend Developer",        
-        "image": "/member4.png"    
+        "image": "/benjamin.jpg"    
     },
     {
-        "id": "7",
-        "name": "Hamza Muhammad Idris",
-        "position": "Frontend Developer",      
-        "image": "/hamza.jpg"      
+        "id": "8",
+        "name": "Iyad Abdullahi",
+        "position": "Backend Developer", 
+        "image": "/iyad.jpg"           
     }
 ]
 
