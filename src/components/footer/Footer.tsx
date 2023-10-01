@@ -60,30 +60,6 @@ const Footer = () => {
                     fontSize='24px'
                     pb="30px"
                     className={roboto.className}
-                    >Company</Heading>
-                    <List className={josefin_Sans.className}>
-                        <ListItem>About</ListItem>
-                        <ListItem>Service</ListItem>
-                        <ListItem>Team Members</ListItem>
-                    </List>
-                </Box>
-                <Box>
-                    <Heading
-                    fontSize='24px'
-                    pb="30px"
-                    className={roboto.className}
-                    >Product</Heading>
-                    <List className={josefin_Sans.className}>
-                        <ListItem>Web Design</ListItem>
-                        <ListItem>Web Development</ListItem>
-                        <ListItem>App development</ListItem>
-                    </List>
-                </Box>
-                <Box>
-                    <Heading
-                    fontSize='24px'
-                    pb="30px"
-                    className={roboto.className}
                     >Social Media</Heading>
                 <Box display='flex'>
                     {socialMedia.map((icon) => (
