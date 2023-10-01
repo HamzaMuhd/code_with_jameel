@@ -109,10 +109,10 @@ const Footer = () => {
                 >
                     <Text >©{currentDate} CodeWithJameel. All rights reserved.</Text>
                    
-                    <Flex  gap={20}>
+                    {/* <Flex  gap={20}>
                       <Link href='/terms'><Text>Terms</Text> </Link> 
                       <Link href='/privacy'><Text>Privacy Policy</Text> </Link> 
-                    </Flex>  
+                    </Flex>   */}
                 </Box>
             </Box>
     );
