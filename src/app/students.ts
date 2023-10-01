@@ -1,12 +1,12 @@
 const students =[
     {
         "id": "1",
-        "name": "SIkirullahi Abdul",
-        "position": "Frontend Developer",  
-        "image": "/sikirullah.jpg"      
+        "name": "Anas Shinkafi",
+        "position": "Backend Developer",        
+        "image": "/anas.jpg"    
     },
     {
-        "id": "7",
+        "id": "2",
         "name": "Hamza Muhammad Idris",
         "position": "Frontend Developer",      
         "image": "/hamza.jpg"      
@@ -18,19 +18,25 @@ const students =[
         "image": "/abdul.jpg"           
     },
     {
-        "id": "2",
+        "id": "4",
+        "name": "SIkirullahi Abdul",
+        "position": "Frontend Developer",  
+        "image": "/sikirullah.jpg"      
+    },
+    {
+        "id": "5",
         "name": "Muhammad Bello",
         "position": "Frontend Developer",  
         "image": "/muhammad.jpg"          
     },
     {
-        "id": "4",
+        "id": "6",
         "name": "Uba Sani",
         "position": "Frontend Developer",        
-        "image": "/member3.png"    
+        "image": "/uba.jpg"    
     },
     {
-        "id": "5",
+        "id": "7",
         "name": "Benjamin Enoch",
         "position": "Frontend Developer",        
         "image": "/benjamin.jpg"    
