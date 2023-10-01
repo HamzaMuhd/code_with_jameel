@@ -21,11 +21,15 @@ const LatestProjects = () => {
         <Box
         display="flex"
         flexDir="column"
-        justifyContent='center'
-        alignItems="center"
         mt='150px'
         px='16px'
         pt='30px'
+        backgroundImage="url('/project.jpg')"
+        backgroundPosition="center"
+        backgroundSize="cover"
+        width="100vw"
+        height="100vh"
+        color="white"
         >
             <VStack>
             <Heading fontFamily="monospace" className={roboto.className}>Ongoing Projects</Heading>
@@ -41,20 +45,7 @@ const LatestProjects = () => {
             gap={5}
             flexDirection={{base:"column", md:"row"}}
             >
-                {projects.map((project)=>(
-                    <Box key={project.id}  >
-                    <Box bgSize='cover'>
-                        <Image src={project.image} alt="latest project" width={280} height={40} />
-                    </Box>
-                    <HStack background="#D9D9D9" w='280px' gap='70px'>
-                        <Box pl='15px'>
-                            <Heading fontSize='16px'>{project.name} </Heading>
-                            <Text fontSize='12px'>{project.description}</Text>
-                        </Box>
-                        <Text><Link href='/'>Launched</Link></Text>
-                    </HStack>
-                </Box>
-                ))}
+            
             </HStack>
             </Box>
         </Box>
