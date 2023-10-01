@@ -79,7 +79,7 @@ const Navbar: React.FC = () => {
                               }}/>}
                         variant='outline'
                 />
-                 <MenuList color='black'>
+                 <MenuList color='black' className={roboto.className} >
                     <MenuItem  as='a' href='#'>
                      Home
                     </MenuItem >
