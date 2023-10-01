@@ -16,6 +16,11 @@ const roboto = Roboto({
     subsets: ['latin'],
   })
 
+  const robotoLight = Roboto({
+    weight: '300',
+    subsets: ['latin'],
+  })
+
 const josefin_Sans = Josefin_Sans({
     weight: '300',
     subsets: ['latin'],
@@ -66,7 +71,7 @@ const StudentGallery = () => {
                     ></Box>
                     <Box pt="6px" display="flex" justifyContent="center" alignItems="center" flexDirection="column">
                         <Heading className={robotoBold.className} fontSize="16px">{student.name}</Heading>
-                        <Text className={roboto.className} >{student.position}</Text>
+                        <Text className={robotoLight.className} >{student.position}</Text>
                     </Box>
                     </Box>
                 ))}
