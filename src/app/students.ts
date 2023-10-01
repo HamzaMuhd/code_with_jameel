@@ -31,9 +31,9 @@ const students =[
     },
     {
         "id": "7",
-        "name": "Hamza Muhammad",
-        "position": "Backend Developer",      
-        "image": "/member5.png"      
+        "name": "Hamza Muhammad Idris",
+        "position": "Frontend Developer",      
+        "image": "/hamza.jpg"      
     }
 ]
 
