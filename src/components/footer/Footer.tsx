@@ -108,7 +108,7 @@ const Footer = () => {
                 pb={20}
                 gap={20}
                 >
-                    <Text >©{currentDate} CodeWithJameel. All rights reserved.</Text>
+                    <Text className={roboto.className} >©{currentDate} CodeWithJameel. All rights reserved.</Text>
                    
                     {/* <Flex  gap={20}>
                       <Link href='/terms'><Text>Terms</Text> </Link> 
