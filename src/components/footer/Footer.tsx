@@ -42,6 +42,7 @@ const Footer = () => {
         <Box 
         display='flex'
         justifyContent='space-around'
+        pl='20px'
         pb='100px'>
             <SimpleGrid minChildWidth='180px' gap={20}>
                 <Box>
