@@ -12,7 +12,7 @@ const roboto = Roboto({
   })
 
   const robotoBold = Roboto({
-    weight: '300',
+    weight: '500',
     subsets: ['latin'],
   })
 
