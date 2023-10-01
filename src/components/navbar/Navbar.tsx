@@ -6,6 +6,17 @@ import Link from "next/link";
 import CustomScrollLink from "../scrollLink";
 import { FaHamburger } from "react-icons/fa";
 import { HamburgerIcon } from "@chakra-ui/icons";
+import { Roboto, Josefin_Sans } from "next/font/google";
+
+const roboto = Roboto({
+    weight: '300',
+    subsets: ['latin'],
+  })
+
+const josefin_Sans = Josefin_Sans({
+    weight: '300',
+    subsets: ['latin'],
+})
 
 // const links = [
 //     {
@@ -47,7 +58,7 @@ const Navbar: React.FC = () => {
         alignItems='center'
         >
             <Heading fontFamily="monospace" fontSize={34} marginTop={3} fontWeight={200} zIndex={1} >{heading}</Heading>
-                <HStack gap={3}  zIndex={1} >
+                <HStack gap={5}  zIndex={1} className={roboto.className} >
                     <Show above="lg">
                     <CustomScrollLink to="/">Home</CustomScrollLink>
                     <CustomScrollLink to="about">About</CustomScrollLink>
