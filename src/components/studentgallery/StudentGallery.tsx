@@ -66,7 +66,7 @@ const StudentGallery = () => {
                     ></Box>
                     <Box pt="6px" display="flex" justifyContent="center" alignItems="center" flexDirection="column">
                         <Heading className={robotoBold.className} fontSize="16px">{student.name}</Heading>
-                        <Text className={robotoBold.className} >{student.position}</Text>
+                        <Text className={roboto.className} >{student.position}</Text>
                     </Box>
                     </Box>
                 ))}
