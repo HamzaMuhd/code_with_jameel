@@ -31,13 +31,13 @@ const students =[
     },
     {
         "id": "6",
-        "name": "Uba Sani",
+        "name": "Uba Rabiu",
         "position": "Frontend Developer",        
         "image": "/uba.jpg"    
     },
     {
         "id": "7",
-        "name": "Benjamin Enoch",
+        "name": "Benjamin Onawo Samuel",
         "position": "Frontend Developer",        
         "image": "/benjamin.jpg"    
     },
