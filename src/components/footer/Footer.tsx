@@ -51,8 +51,7 @@ const Footer = () => {
                     className={roboto.className}
                     pb="30px"
                     >CodeWithJameel</Heading>
-                    <Text className={josefin_Sans.className}>freestar Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus luctus consectetur. 
-                        Maecenas egestas accumsan justo, 
+                    <Text className={josefin_Sans.className}>Empowering Nigerian developers with knowledge, resources, and support. We foster tech innovation, inclusivity, and leadership, spanning various programming languages and frameworks to inspire the next generation.
                     </Text>
                 </Box>
                 <Box>
