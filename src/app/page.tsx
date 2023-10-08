@@ -1,13 +1,12 @@
-import {
-  About,
-  Service,
-  NumberOfStudent,
-  StudentGallery,
-  LatestProjects,
-  Partners,
-  Contact,
-  HeroSection,
-} from "./sections/page";
+import About from "@/components/about/About";
+import Contact from "@/components/contact/Contact";
+import HeroSection from "@/components/herosection/HeroSection";
+import LatestProjects from "@/components/latestprojects/LatestProjects";
+import NumberOfStudent from "@/components/numberofstudent/NumberOfStudent";
+import Partners from "@/components/partners/Partner";
+import Service from "@/components/service/Service";
+import StudentGallery from "@/components/studentgallery/StudentGallery";
+
 
 const Home = () => {
   return (
