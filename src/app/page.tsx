@@ -10,7 +10,7 @@ import StudentGallery from "@/components/studentgallery/StudentGallery";
 
 const Home = () => {
   return (
-    <main className="relative">
+    <main>
       <section>
         <HeroSection />
       </section>

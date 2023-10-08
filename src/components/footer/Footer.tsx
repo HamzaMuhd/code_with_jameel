@@ -33,6 +33,7 @@ const Footer = () => {
             w="100vw"
             pt='100px'
             alignItems='center'
+            px={{ md:'30px' }}
         >
             <Box
                 pl='20px'
