@@ -1,19 +1,19 @@
 'use client'
 
-import { Box, Center, Heading, Text, VStack, Button } from "@chakra-ui/react";
 import Navbar from "../navbar/Navbar";
 import { useState, useEffect } from "react";
 import { Roboto, Josefin_Sans } from "next/font/google";
+import { Box, Center, Heading, Text, VStack, Button } from "@chakra-ui/react";
 
-const roboto = Roboto({
+  const roboto = Roboto({
     weight: '100',
     subsets: ['latin'],
   })
 
-const josefin_Sans = Josefin_Sans({
+  const josefin_Sans = Josefin_Sans({
     weight: '300',
     subsets: ['latin'],
-})
+  })
 
 const HeroSection = () => {
   const [headerText, setHeaderText] = useState("");

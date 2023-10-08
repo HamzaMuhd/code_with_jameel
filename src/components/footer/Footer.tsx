@@ -1,6 +1,6 @@
 'use client'
 
-import { Box, Heading, Text, Spacer, Flex } from "@chakra-ui/react";
+import { Box, Heading, Text, Spacer, Flex, SimpleGrid, List, ListItem } from "@chakra-ui/react";
 import { Roboto, Josefin_Sans } from "next/font/google";
 import Image from "next/image";
 
@@ -40,7 +40,52 @@ const Footer = () => {
                 display='flex'
                 justifyContent='space-around'
             >
-                <Flex flexDirection={{ base: "column", md: "row" }} alignItems={{ base: "center", md: "flex-start" }}>
+                <SimpleGrid minChildWidth='180px' gap={20}>
+                    <Box>
+                        <Heading
+                            fontSize='24px'
+                            className={roboto.className}
+                            pb="30px"
+                        >CodeWithJameel</Heading>
+                        <Text className={josefin_Sans.className}>Empowering Nigerian developers with knowledge, resources, and support. We foster tech innovation, inclusivity, and leadership, spanning various programming languages and frameworks to inspire the next generation.
+                        </Text>
+                    </Box>
+                    {/* Add an empty spacer */}
+                    <Box flex="1"></Box>
+                    <Box>
+                        <Heading
+                            fontSize='24px'
+                            pb="30px"
+                            className={roboto.className}
+                        ></Heading>
+                        <List className={josefin_Sans.className}>
+                            <ListItem></ListItem>
+                            <ListItem></ListItem>
+                            <ListItem></ListItem>
+                        </List>
+                    </Box>
+                    <Box>
+                        <Heading
+                            fontSize='24px'
+                            pb="30px"
+                            className={roboto.className}
+                        >Social Media</Heading>
+                        <Box display='flex'>
+                            {socialMedia.map((icon) => (
+                                <Box key={icon.alt} display='flex' mr={20} justifyContent="center" alignItems="center" width='38px' height='38px' backgroundColor='white' borderRadius={99}>
+                                    <Image
+                                        src={icon.src}
+                                        alt={icon.alt}
+                                        width={24}
+                                        height={24}
+                                    />
+                                </Box>
+                            ))}
+                        </Box>
+                    </Box>
+                </SimpleGrid>
+
+                {/* <Flex flexDirection={{ base: "column", md: "row" }} alignItems={{ base: "center", md: "flex-start" }}>
                     <Box flex="1" maxW={{ base: "100%", md: "400px" }}>
                         <Heading
                             fontSize='24px'
@@ -70,7 +115,7 @@ const Footer = () => {
                             ))}
                         </Flex>
                     </Box>
-                </Flex>
+                </Flex> */}
 
             </Box>
 

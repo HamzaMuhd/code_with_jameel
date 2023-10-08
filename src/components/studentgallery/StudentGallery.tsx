@@ -1,6 +1,6 @@
 'use client'
 
-import { Box, Grid, Text, Heading, Button, VStack, HStack, SimpleGrid, Center, Flex } from "@chakra-ui/react";
+import { Box, Grid, Text, Heading, Flex } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
 import students from "@/app/students";
