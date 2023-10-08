@@ -1,9 +1,9 @@
 'use client'
-// import { FC, ReactNode } from "react";
+import { FC, ReactNode } from "react";
 import { Box, HStack, Heading, Hide, IconButton, Menu, MenuButton, MenuItem, MenuList, Show } from "@chakra-ui/react";
 import { Montserrat } from "next/font/google";
 import Link from "next/link";
-import Headroom from 'react-headroom'
+// import Headroom from 'react-headroom'
 import CustomScrollLink from "../scrollLink";
 import { FaHamburger } from "react-icons/fa";
 import { HamburgerIcon } from "@chakra-ui/icons";
@@ -54,11 +54,9 @@ const Navbar: React.FC = () => {
     const heading = "<CWJ/>"
     return (
         <>
-            <Headroom>
+            {/* <Headroom> */}
                 <Box
                     py={4}
-                    bg='black'
-                    zIndex={999}
                     display='flex'
                     alignItems='center'
                     justifyContent='space-around'
@@ -103,7 +101,7 @@ const Navbar: React.FC = () => {
                         </Hide>
                         
                 </Box>
-            </Headroom>
+            {/* </Headroom> */}
         </>
     );
 }
