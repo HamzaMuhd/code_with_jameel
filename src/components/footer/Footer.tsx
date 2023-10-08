@@ -42,7 +42,7 @@ const Footer = () => {
             >
                 <SimpleGrid minChildWidth='180px' gap={20}>
                     <Box>
-                        <Heading
+                        <Heading 
                             fontSize='24px'
                             className={roboto.className}
                             pb="30px"
@@ -50,8 +50,18 @@ const Footer = () => {
                         <Text className={josefin_Sans.className}>Empowering Nigerian developers with knowledge, resources, and support. We foster tech innovation, inclusivity, and leadership, spanning various programming languages and frameworks to inspire the next generation.
                         </Text>
                     </Box>
-                    {/* Add an empty spacer */}
-                    <Box flex="1"></Box>
+                    <Box>
+                        <Heading
+                            fontSize='24px'
+                            pb="30px"
+                            className={roboto.className}
+                        ></Heading>
+                        <List className={josefin_Sans.className}>
+                            <ListItem></ListItem>
+                            <ListItem></ListItem>
+                            <ListItem></ListItem>
+                        </List>
+                    </Box>
                     <Box>
                         <Heading
                             fontSize='24px'
@@ -73,7 +83,7 @@ const Footer = () => {
                         <Box display='flex'>
                             {socialMedia.map((icon) => (
                                 <Box key={icon.alt} display='flex' mr={20} justifyContent="center" alignItems="center" width='38px' height='38px' backgroundColor='white' borderRadius={99}>
-                                    <Image
+                                    <Image 
                                         src={icon.src}
                                         alt={icon.alt}
                                         width={24}
