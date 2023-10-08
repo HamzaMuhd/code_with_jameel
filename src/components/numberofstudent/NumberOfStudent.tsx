@@ -21,21 +21,21 @@ const josefin_Sans = Josefin_Sans({
 const NumberOfStudent = () => {
     return (
         <Box
-        mt='200px'
-        w='100vw'
-        h='420px'
-        bg='#D9D9D9'
-        display='flex'
-        justifyContent='center'
-        alignItems='center'
-        flexDir='column'
-        gap={20}
+            mt={{ base:'20', md:'200px' }}
+            w='100vw'
+            h={{ base:'100vh', md:'420px' }}
+            bg='#D9D9D9'
+            display='flex'
+            justifyContent='center'
+            alignItems='center'
+            flexDir='column'
+            gap={20}
         >
-            <Heading className={robotoLight.className}>Number of Beneficiaries</Heading>
+            <Heading fontSize={{ base:'25px', md:'45px' }} className={robotoLight.className}>Number of Beneficiaries</Heading>
            
             <HStack 
-            flexDirection={{base:"column", md:"row"}}
-            gap={{base:"15px", md:"150px"}}
+                flexDirection={{base:"column", md:"row"}}
+                gap={{base:"15px", md:"150px"}}
             >
                 <VStack>
                     <Heading className={roboto.className} >23+</Heading>

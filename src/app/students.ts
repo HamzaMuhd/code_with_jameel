@@ -25,7 +25,7 @@ const students =[
     },
     {
         "id": "5",
-        "name": "Muhammad Bello",
+        "name": "Muhammad A Bello",
         "position": "Frontend Developer",  
         "image": "/muhammad.jpg"          
     },
@@ -46,6 +46,18 @@ const students =[
         "name": "Iyad Abdullahi",
         "position": "Backend Developer", 
         "image": "/iyad.jpg"           
+    },
+    {
+        "id": "9",
+        "name": "Phebe Abu",
+        "position": "Marketter",        
+        "image": "/phebe.jpg"    
+    },
+    {
+        "id": "10",
+        "name": "Ishaq Ibrahim",
+        "position": "Frontend Developer", 
+        "image": "/ishak.jpg"           
     }
 ]
 

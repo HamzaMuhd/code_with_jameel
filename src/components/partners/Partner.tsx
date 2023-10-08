@@ -16,17 +16,18 @@ const josefin_Sans = Josefin_Sans({
 const Partners = () => {
     return (
         <Box
-        mt='150px'
-        px='16px'
-        pt='30px'
+            px='16px'
+            pt='30px'
+            mt={{ base:'50px', md:'150px' }}
         >
             <VStack>
                 <Heading className={roboto.className}>Partners</Heading>
                 <Text
-                mt={5}
-                mb={10}
-                fontSize={18}
-                className={josefin_Sans.className}    
+                    mt={5}
+                    mb={10}
+                    fontSize={18}
+                    className={josefin_Sans.className}    
+                    textAlign={{ base:'center', md:'start' }}
                 >Collaborators who amplify our mission and drive technology forward with us.</Text>
                 <HStack 
                 flexDir={{base:'column', md:'row'}}

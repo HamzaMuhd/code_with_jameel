@@ -1,3 +1,5 @@
+'use client'
+
 import { Box, Center, Heading, Text, VStack, Button } from "@chakra-ui/react";
 import Navbar from "../navbar/Navbar";
 import { useState, useEffect } from "react";
@@ -41,6 +43,7 @@ const HeroSection = () => {
       w="100vw"
       color="#fff"
       position="relative"
+      py={5}
     >
       {/* Overlay */}
       <Box
@@ -77,7 +80,6 @@ const HeroSection = () => {
               community of developers from all corners of Nigeria.
             </Text>
             <Button
-              colorScheme="gray"
               size="lg"
               mt={4}
               color="black"

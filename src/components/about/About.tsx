@@ -16,23 +16,23 @@ const josefin_Sans = Josefin_Sans({
 const About = () => {
     return (
         <Box
-        id="about"
-        display='flex'
-        justifyContent='center'
-        alignItems='center'
-        flexDirection='column'
-        mt='150px'
-        px="16px"
-        pt='30px'
+            id="about"
+            display='flex'
+            justifyContent='center'
+            alignItems='center'
+            flexDirection='column'
+            mt='150px'
+            px="16px"
+            pt='30px'
         >
             <Heading
             mb='30px'
             className={roboto.className}
             >About Us</Heading>
             <HStack
-            flexDirection={{base:"column-reverse", md:"row"}}
-            gap={4}
-            alignItems='stretch'
+                flexDirection={{base:"column-reverse", md:"row"}}
+                gap={4}
+                alignItems='stretch'
             >
                 <Box w={{base:'200', md:'500px'}}>
                     <Text textAlign="justify" className={josefin_Sans.className} fontSize={17}>CodeWithJameel is a vibrant and inclusive community dedicated to harnessing the transformative power of technology and unlocking the potential of Nigerian developers. Our vision is to empower aspiring developers with access to knowledge, resources, and support, nurturing the next generation of tech leaders and innovators in Nigeria. We are more than just a website; we are a dynamic collective of passionate developers, tech enthusiasts, and industry experts committed to fostering growth within Nigeria&apos;s tech ecosystem. We offer a rich educational environment with tutorials, guides, and content spanning various programming languages and frameworks.
@@ -41,8 +41,8 @@ const About = () => {
                     </Text>
                 </Box>
                 <Spacer />
-                <Box w={{base:'200', md:'500px'}}> 
-                    <Image src="/team.png" alt="About us"  width={500} height={490} /> 
+                <Box w={{base:'100%', md:'500px'}}> 
+                    <Image src="/group-pic2.jpg" alt="About us"  width={500} height={490} /> 
                 </Box>
             </HStack>
         </Box>
