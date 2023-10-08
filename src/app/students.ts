@@ -50,7 +50,7 @@ const students =[
     {
         "id": "9",
         "name": "Phebe Abu",
-        "position": "Marketter",        
+        "position": "Digital Marketter",        
         "image": "/phebe.jpg"    
     },
     {
