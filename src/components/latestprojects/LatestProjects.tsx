@@ -71,6 +71,8 @@ const LatestProjects = () => {
                                 _hover={{
                                     bg: "black",
                                     color: "white",
+                                    border:'2px',
+                                    borderColor:'white',
                                 }}
                             >
                                 SIGNUP NOW!

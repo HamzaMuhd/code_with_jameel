@@ -42,7 +42,7 @@ const About = () => {
                 </Box>
                 <Spacer />
                 <Box w={{base:'100%', md:'500px'}}> 
-                    <Image src="/group-pic2.jpg" alt="About us"  width={500} height={490} /> 
+                    <Image src="/group-img1.jpg" alt="About us"  width={500} height={490} style={{ borderRadius:'10px' }} /> 
                 </Box>
             </HStack>
         </Box>

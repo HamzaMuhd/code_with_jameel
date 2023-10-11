@@ -49,7 +49,7 @@ const Contact = () => {
                     maxW={{ base:'100%', md:'700px' }}
                 >
                     <Image
-                        src="/group-pic1.jpg"
+                        src="/group-img2.jpg"
                         alt="contact image"
                         boxSize='100%'
                         objectFit='cover'

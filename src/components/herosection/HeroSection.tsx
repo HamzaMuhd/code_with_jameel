@@ -39,7 +39,7 @@ const HeroSection = () => {
       backgroundSize="cover"
       bgPosition="center"
       backgroundRepeat="no-repeat"
-      height="100vh"
+      minH="100vh"
       w="100vw"
       color="#fff"
       position="relative"
@@ -57,7 +57,7 @@ const HeroSection = () => {
 
       <Navbar />
       <Center>
-        <Box mt={["160px", "160px"]} w={["80%", "50%"]}>
+        <Box mt={{ base:'90px', md:'160px' }} w={["80%", "50%"]}>
           <VStack>
             <Heading
               textAlign="center"
@@ -88,6 +88,8 @@ const HeroSection = () => {
               _hover={{
                 bg: "black",
                 color: "white",
+                border:'2px',
+                borderColor:'white',
               }}
             >
               Donate

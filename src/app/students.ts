@@ -19,7 +19,7 @@ const students =[
     },
     {
         "id": "4",
-        "name": "SIkirullahi Abdul",
+        "name": "SIkirullahi Abdulkadir",
         "position": "Frontend Developer",  
         "image": "/sikirullah.jpg"      
     },
