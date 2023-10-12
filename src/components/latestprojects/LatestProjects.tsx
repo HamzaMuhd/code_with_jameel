@@ -62,7 +62,6 @@ const LatestProjects = () => {
                         <Text textAlign={{ base:'justify', md:'start' }} fontSize={{ base:'16px', }} className={josefin_Sans.className}>KashCycle is an innovative and ongoing project initiated by CodeWithJameel, aimed at revolutionizing thrift contribution practices, commonly known as ADASHE within Nigeria and beyond. This digital platform seeks to modernize and streamline the traditional savings and contribution system, making it more accessible, efficient, and secure for users.</Text>
                         <Link href="https://kashcycle.com.ng" passHref>
                             <Button
-                                colorScheme="gray"
                                 size="sm"
                                 mt={2}
                                 color="black"

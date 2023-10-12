@@ -43,7 +43,6 @@ const HeroSection = () => {
       w="100vw"
       color="#fff"
       position="relative"
-      py={5}
     >
       {/* Overlay */}
       <Box
