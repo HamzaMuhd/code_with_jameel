@@ -39,7 +39,7 @@ const NumberOfStudent = () => {
             >
                 <VStack>
                     <Heading className={roboto.className} >23+</Heading>
-                    <Text className={roboto.className} >HTML,CSS, JavaScript</Text>
+                    <Text className={roboto.className} >HTML, CSS, JavaScript, Python</Text>
                 </VStack>
                 <VStack>
                     <Heading className={roboto.className} >12</Heading>

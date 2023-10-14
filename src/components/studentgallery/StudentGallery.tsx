@@ -61,7 +61,7 @@ const StudentGallery = () => {
                         margin={{ base:'15px', md:"8px" }} // Add margin to create a gap between cards
                     >
                         <Box
-                            border="5px solid #bbb"
+                            border="2px solid #bbb"
                             borderRadius="5px"
                             w="218px"
                             h="300px"

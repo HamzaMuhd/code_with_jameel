@@ -3,7 +3,7 @@
 import Navbar from "../navbar/Navbar";
 import { useState, useEffect } from "react";
 import { Roboto, Josefin_Sans } from "next/font/google";
-import { Box, Center, Heading, Text, VStack, Button } from "@chakra-ui/react";
+import { Box, Center, Heading, Text, VStack, Button, Flex, Container } from "@chakra-ui/react";
 
   const roboto = Roboto({
     weight: '100',
@@ -55,8 +55,8 @@ const HeroSection = () => {
       ></Box>
 
       <Navbar />
-      <Center>
-        <Box mt={{ base:'90px', md:'160px' }} w={["80%", "50%"]}>
+      <Container maxW='2xl' centerContent mt={{ base:'20em', md:'0' }} py={{ md:'160px', lg:'170px' }}>
+        {/* <Flex align='center'> */}
           <VStack>
             <Heading
               textAlign="center"
@@ -94,8 +94,8 @@ const HeroSection = () => {
               Donate
             </Button>
           </VStack>
-        </Box>
-      </Center>
+        {/* </Flex> */}
+      </Container>
     </Box>
   );
 };

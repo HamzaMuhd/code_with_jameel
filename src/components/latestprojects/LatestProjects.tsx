@@ -1,8 +1,6 @@
 'use client'
 
-import projects from "@/app/projects";
 import { Box, Button, HStack, Heading, Text, VStack } from "@chakra-ui/react"
-import Image from "next/image";
 import Link from "next/link"
 import { Roboto, Josefin_Sans } from "next/font/google";
 
@@ -30,7 +28,7 @@ const LatestProjects = () => {
             backgroundSize="cover"
             backgroundPosition="center"
             backgroundImage={{
-                base:"url('/phone-bg3.png')", 
+                base:"url('/phonebg-new.png')", 
                 md:"url('/project.jpg')",
             }}
         >
