@@ -30,34 +30,32 @@ const Footer = () => {
     return (
         <footer style={{ marginTop:'150px', background:'#000' }}>
             <Container className={roboto.className} maxW="100vw" p={{ base: '3', md: '5' }} m='0'>
-                {/* <Flex flexDir='column'> */}
-                    <Flex flexDir={{ base:'column', md:'row' }} w='100vw' justifyContent={{  base:'start', md:'center' }} gap='10' flexWrap='wrap' >
-                        <Flex flexDir={{ base:'column', md:'row' }} gap='10' flexWrap='wrap'>
-                            {footerLinks.map((section, index) => (
-                                <Box gap={4} color='white' maxW={{ base: '100%', md: '400px' }} alignItems='center' key={index}>
-                                    <Heading className={roboto.className} pb={4} textAlign='start' fontSize={{ base:"22px", md:"24px" }}>{section.title}</Heading>
-                                    {section.links.map((link) => (
-                                        <Box className={josefin_Sans.className} fontSize={{ base:"15px", md:"18px" }} textAlign='start' key={link.name}>
-                                            <Link href={link.link}>{link.name}</Link>
-                                        </Box>
-                                    ))}
-                                </Box>
-                            ))}
-                        </Flex>
-                        <Flex> 
-                            {socialMedia.map((item, index) => (
-                                <Box className={roboto.className} color='white' key={index}>
-                                    <Heading pb={4} className={roboto.className} textAlign={{ base:'start' }} fontSize={{ base:"22px", md:"24px" }}>{item.title}</Heading>
-                                    {item.icons.map((icon) => (
-                                        <Flex key={index}>
-                                                <Link href={icon.link} >{icon.icon}</Link>
-                                        </Flex>
-                                    ))}
-                                </Box>
-                            ))}
-                        </Flex>  
+                <Flex flexDir={{ base:'column', md:'row' }} w='100%' justifyContent={{  base:'start', md:'center' }} gap='10' flexWrap='wrap' >
+                    <Flex flexDir={{ base:'column', md:'row' }} gap='10' flexWrap='wrap'>
+                        {footerLinks.map((section, index) => (
+                            <Box gap={4} color='white' maxW={{ base: '100%', md: '400px' }} alignItems='center' key={index}>
+                                <Heading className={roboto.className} pb={4} textAlign='start' fontSize={{ base:"22px", md:"24px" }}>{section.title}</Heading>
+                                {section.links.map((link) => (
+                                    <Box className={josefin_Sans.className} fontSize={{ base:"15px", md:"18px" }} textAlign='start' key={link.name}>
+                                        <Link href={link.link}>{link.name}</Link>
+                                    </Box>
+                                ))}
+                            </Box>
+                        ))}
                     </Flex>
-                {/* </Flex> */}
+                    <Flex> 
+                        {socialMedia.map((item, index) => (
+                            <Box className={roboto.className} color='white' key={index}>
+                                <Heading pb={4} className={roboto.className} textAlign={{ base:'start' }} fontSize={{ base:"22px", md:"24px" }}>{item.title}</Heading>
+                                {item.icons.map((icon) => (
+                                    <Flex key={index}>
+                                        <Link href={icon.link} >{icon.icon}</Link>
+                                    </Flex>
+                                ))}
+                            </Box>
+                        ))}
+                    </Flex>  
+                </Flex>
                 <Flex> 
                     <Text
                         pt='20'
@@ -68,7 +66,7 @@ const Footer = () => {
                         fontSize= {{ base:"13px", md:"15px" }}
                         className={roboto.className}
                     >
-                        Copyright ©{currentDate} CodeWithJameel.. All rights reserved
+                        Copyright ©{currentDate} CodeWithJameel. All rights reserved
                     </Text> 
                 </Flex>
             </Container>
