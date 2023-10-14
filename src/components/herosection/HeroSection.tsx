@@ -40,7 +40,7 @@ const HeroSection = () => {
       bgPosition="center"
       backgroundRepeat="no-repeat"
       minH="100vh"
-      w="100vw"
+      maxW="100vw"
       color="#fff"
       position="relative"
     >
@@ -55,46 +55,44 @@ const HeroSection = () => {
       ></Box>
 
       <Navbar />
-      <Container maxW='2xl' centerContent mt={{ base:'20em', md:'0' }} py={{ md:'160px', lg:'170px' }}>
-        {/* <Flex align='center'> */}
-          <VStack>
-            <Heading
-              textAlign="center"
-              lineHeight={["45px", "60px"]}
-              zIndex={1}
-              className={roboto.className}
-            >
-              {headerText}
-            </Heading>
-            <Text
-              className={josefin_Sans.className}
-              textAlign="center"
-              lineHeight="24px"
-              fontSize={18}
-              zIndex={1}
-            >
-              A community of passionate coders, eager to learn the latest tech
-              trends, and looking to connect with like-minded individuals.
-              CodeWithJameel is a gateway to a vibrant and supportive
-              community of developers from all corners of Nigeria.
-            </Text>
-            <Button
-              size="lg"
-              mt={4}
-              color="black"
-              bg="white"
-              className={josefin_Sans.className}
-              _hover={{
-                bg: "black",
-                color: "white",
-                border:'2px',
-                borderColor:'white',
-              }}
-            >
-              Donate
-            </Button>
-          </VStack>
-        {/* </Flex> */}
+      <Container maxW='4xl' pt={{ base:'10em', md:'160px', lg:'170px' }}>
+        <Flex p='5' flexDir='column' align='center'>
+          <Heading
+            textAlign="center"
+            lineHeight={["45px", "60px"]}
+            zIndex={1}
+            className={roboto.className}
+          >
+            {headerText}
+          </Heading>
+          <Text
+            className={josefin_Sans.className}
+            textAlign="center"
+            lineHeight="24px"
+            fontSize={18}
+            zIndex={1}
+          >
+            A community of passionate coders, eager to learn the latest tech
+            trends, and looking to connect with like-minded individuals.
+            CodeWithJameel is a gateway to a vibrant and supportive
+            community of developers from all corners of Nigeria.
+          </Text>
+          <Button
+            size="lg"
+            mt={{ base:'10', md:`${5}` }}
+            color="black"
+            bg="white"
+            className={josefin_Sans.className}
+            _hover={{
+              bg: "black",
+              color: "white",
+              border:'2px',
+              borderColor:'white',
+            }}
+          >
+            Donate
+          </Button>
+        </Flex>
       </Container>
     </Box>
   );
