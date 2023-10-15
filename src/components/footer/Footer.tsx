@@ -67,9 +67,9 @@ const Footer = () => {
                             className={roboto.className}
                         >Contact us</Heading>
                         <List className={josefin_Sans.className}>
-                            <ListItem>codewithjameel@gmail.com</ListItem>
+                            <ListItem>info@codewithjameel.com.ng</ListItem>
                             <ListItem>+23480-6317-2758</ListItem>
-                            <ListItem>Address</ListItem>
+                            <ListItem>Abuja</ListItem>
                         </List>
                     </Box>
                     {/* <Box> */}
