@@ -25,9 +25,17 @@ const josefin_Sans = Josefin_Sans({
     subsets: ['latin'],
 })
 
+// const colors = {
+//     facebook: '#1877F2',
+//     twitter: '#1DA1F2',
+//     instagram: '#E4405F',
+//     linkedin: '#0077B5',
+//     email: '#FFA500',
+// };
+
 const Footer = () => { 
     const currentDate = new Date().getFullYear();
-    
+
     return (
         <footer>
             <Container maxW="100vw" m='0' p='0'>
@@ -37,10 +45,10 @@ const Footer = () => {
                             <Heading fontWeight='600' pb={4} className={roboto.className} textAlign='center' fontSize="24px">Follow Us</Heading>
                             <HStack>
                                 <Link aria-label="facebook" href="https://www.facebook.com/profile.php?id=61552227451895&mibextid=ZbWKwL">
-                                    <IconButton _hover={{ bg:'transparent' }} bg='transparent' aria-label="facebook"><FaFacebook /></IconButton>
+                                    <IconButton _hover={{ bg:'transparent' }} bg='transparent' aria-label="facebook"><FaFacebook color='blue' /></IconButton>
                                 </Link>
                                 <Link aria-label="twitter" href="https://www.twitter.com/">
-                                    <IconButton _hover={{ bg:'transparent' }} bg='transparent' aria-label="twitter"><FaTwitter /></IconButton>
+                                    <IconButton _hover={{ bg:'transparent' }} bg='transparent' aria-label="twitter"><FaTwitter color='#FFA500'/></IconButton>
                                 </Link>
                                 <Link aria-label="instagram" href="https://www.instagram.com/invites/contact/?i=19zvqga1gcdm8&utm_content=sofwqvo">
                                     <IconButton _hover={{ bg:'transparent' }} bg='transparent' aria-label="instagram"><FaInstagram /></IconButton>

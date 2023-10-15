@@ -57,7 +57,9 @@ const LatestProjects = () => {
                         mx='145px'
                         mb='80px'
                     >   
-                        <Text textAlign={{ base:'justify', md:'start' }} fontSize={{ base:'16px', }} className={josefin_Sans.className}>KashCycle is an ongoing project that has been set in motion by the talented and proficient members of CodeWithJameel. As they harness their expertise and innovative vision, they are diligently working on the development of this project. With the promising outlook of receiving the necessary funding by the close of the year 2023, KashCycle is poised to make a significant mark in the realm it operates in.</Text>
+                        <Text textAlign={{ base:'justify', md:'start' }} fontSize={{ base:'16px', }} className={josefin_Sans.className}>
+                            Get ready for a fintech game-changer that&apos;s about to redefine your financial world! CodeWithJameel Community has been quietly crafting KashCycle, a groundbreaking web app that&apos;s set to make waves. Be the first in line to unveil our truly extraordinary fintech experience. Follow us on social media, because something big is on the horizon, and we can&apos;t wait to share it with you. Brace yourself for CashCycle – it's not just an app; it&apos;s a revolution!
+                        </Text>
                         <Link href="https://kashcycle.com.ng" passHref>
                             <Button
                                 size="sm"
