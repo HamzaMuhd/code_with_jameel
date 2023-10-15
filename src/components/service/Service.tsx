@@ -37,12 +37,13 @@ const Service = () => {
                     flexDirection={{base:"column", md:"row"}}
                     gap={50}
                     w='100%'
+                    h='fit-content'
                     justifyContent={'center'}
                 >
                     <Box 
                         w={{base:"100%", md:"370px"}}
-                        maxW={{base:"350px", md:"370px"}}
-                        h={{ base:"100%", md:"330px" }}
+                        maxW={{base:"350px", md:"500px"}}
+                        h={{ base:"100%", md:"400px" }}
                         bg='#D9D9D9'
                         borderRadius="15px"
                         display='flex'
@@ -62,8 +63,8 @@ const Service = () => {
                     </Box>
                     <Box 
                         w={{base:"100%", md:"370px"}}
-                        maxW={{base:"350px", md:"370px"}}
-                        h={{ base:"100%", md:"330px" }}
+                        maxW={{base:"350px", md:"500px"}}
+                        h={{ base:"100%", md:"400px" }}
                         bg='#D9D9D9'
                         borderRadius="15px"
                         display='flex'
@@ -83,8 +84,8 @@ const Service = () => {
                     </Box>
                     <Box 
                         w={{base:"100%", md:"370px"}}
-                        maxW={{base:"350px", md:"370px"}}
-                        h={{ base:"100%", md:"330px" }}
+                        maxW={{base:"350px", md:"500px"}}
+                        h={{ base:"100%", md:"400px" }}
                         bg='#D9D9D9'
                         borderRadius="15px"
                         display='flex'

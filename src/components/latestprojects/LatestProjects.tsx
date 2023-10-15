@@ -58,7 +58,7 @@ const LatestProjects = () => {
                         mb='80px'
                     >   
                         <Text textAlign={{ base:'justify', md:'start' }} fontSize={{ base:'16px', }} className={josefin_Sans.className}>
-                            Get ready for a fintech game-changer that&apos;s about to redefine your financial world! CodeWithJameel Community has been quietly crafting KashCycle, a groundbreaking web app that&apos;s set to make waves. Be the first in line to unveil our truly extraordinary fintech experience. Follow us on social media, because something big is on the horizon, and we can&apos;t wait to share it with you. Brace yourself for CashCycle – it's not just an app; it&apos;s a revolution!
+                            Get ready for a fintech game-changer that&apos;s about to redefine your financial world! CodeWithJameel Community has been quietly crafting KashCycle, a groundbreaking web app that&apos;s set to make waves. Be the first in line to unveil our truly extraordinary fintech experience. Follow us on social media, because something big is on the horizon, and we can&apos;t wait to share it with you. Brace yourself for KashCycle – it&apos;s not just an app; it&apos;s a revolution!
                         </Text>
                         <Link href="https://kashcycle.com.ng" passHref>
                             <Button
