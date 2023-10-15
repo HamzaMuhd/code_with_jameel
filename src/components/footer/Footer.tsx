@@ -1,8 +1,7 @@
 'use client'
 
-import { Box, Heading, Text, Spacer, Flex, SimpleGrid, List, ListItem } from "@chakra-ui/react";
 import { Roboto, Josefin_Sans } from "next/font/google";
-import Image from "next/image";
+import { Box, Heading, Text, Spacer, SimpleGrid, List, ListItem } from "@chakra-ui/react";
 
 const roboto = Roboto({
     weight: '100',
@@ -15,12 +14,8 @@ const josefin_Sans = Josefin_Sans({
 })
 
 const Footer = () => {
+    
     const currentDate = new Date().getFullYear();
-    // const socialMedia = [
-    //     { src: 'facebook.svg', alt: "facebook logo" },
-    //     { src: '/twitter.svg', alt: "twitter logo" },
-    //     { src: '/instagram.svg', alt: "instagram logo" },
-    // ];
 
     return (
         <Box

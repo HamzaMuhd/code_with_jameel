@@ -28,7 +28,7 @@ const LatestProjects = () => {
             backgroundSize="cover"
             backgroundPosition="center"
             backgroundImage={{
-                base:"url('/phonebg-new.png')", 
+                base:"url('/phone-bg2.png')", 
                 md:"url('/project.jpg')",
             }}
         >
