@@ -12,19 +12,19 @@ export const footerLinks = [
         ],
     },
     {
-        title: "Help",
+        title: "Quick links",
         links: [
-            { name: "About us", link: "/" },
-            { name: "FAQs", link: "/" },
-            { name: "How it works", link: "/" },
-            { name: "Privacy policy", link: "/" },
+            { name: "Home", link: "/" },
+            { name: "About", link: "/" },
+            { name: "Contact", link: "/" },
         ],
     },
     {
-        title: "Get in touch",
+        title: "Contact us",
         links: [
-            { name: "customer@codewithjameel.com", link: "customer@codewithjameel.com.ng" },
+            { name: "codewithjameel@gmail.com", link: "codewithjameel@gmail.com" },
             { name: "+23480-6317-2758", link: "tel:+23480-6317-2758" },
+            { name: "Address", link: "" },
         ],
     },
 ];
