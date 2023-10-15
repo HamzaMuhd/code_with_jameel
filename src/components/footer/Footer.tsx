@@ -13,34 +13,34 @@ import { Roboto, Josefin_Sans } from "next/font/google";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { EmailIcon } from "@chakra-ui/icons";
 
-const roboto = Roboto({
-    weight: '100',
-    subsets: ['latin'],
-})
+  const roboto = Roboto({
+      weight: '100',
+      subsets: ['latin'],
+  })
 
-const josefin_Sans = Josefin_Sans({
-    weight: '300',
-    subsets: ['latin'],
-})
-  
-const socialMediaLinks = [
+  const josefin_Sans = Josefin_Sans({
+      weight: '300',
+      subsets: ['latin'],
+  })
+
+  const socialMediaLinks = [
     {
-      icon: <FaFacebook color='blue' size='35px' />,
+      icon: <FaFacebook color='blue' />,
       label: 'facebook',
-      link: 'https://www.facebook.com/profile.php?id=61552227451895&mibextid=ZbWKwL',
+      link: 'https://www.facebook.com/profile.php?id=61552373251396&mibextid=ZbWKwL',
     },
     {
-      icon: <FaTwitter color='blue' size='35px' />,
+      icon: <FaTwitter color='blue' />,
       label: 'twitter',
-      link: 'https://www.twitter.com/',
+      link: 'https://twitter.com/Codewithjameel?t=YSaFmhfeaClCRkIpsLvYUQ&s=09',
     },
     {
-      icon: <FaInstagram color='red' size='35px' />,
+      icon: <FaInstagram color='red' />,
       label: 'instagram',
       link: 'https://www.instagram.com/invites/contact/?i=19zvqga1gcdm8&utm_content=sofwqvo',
     },
     {
-      icon: <FaLinkedin color='blue' size='35px' />,
+      icon: <FaLinkedin color='blue' />,
       label: 'linkedin',
       link: 'http://www.linkedin.com/in/jameel-wubni-05aa96295',
     },
@@ -57,14 +57,16 @@ const socialMediaLinks = [
               <Stack>
                 <HStack>
                   {socialMediaLinks.map((socialMedia, index) => (
-                    <Link key={index} aria-label={socialMedia.label} href={socialMedia.link}>
+                    <Link key={index} target="_blank" rel="noopener noreferrer" aria-label={socialMedia.label} href={socialMedia.link}>
                       <IconButton
-                        _hover={{ bg: 'transparent' }}
-                        bg='transparent'
-                        aria-label={socialMedia.label}
                         border='1px'
-                        borderColor='gray.400'
+                        bg='transparent'
                         rounded={'full'}
+                        borderColor='gray.400'
+                        _hover={{ bg: 'transparent' }}
+                        aria-label={socialMedia.label}
+                        boxSize={{base:'2.5em', md:'50px'}}
+                        fontSize={{ base: "20px", md: "35px" }}
                       >
                         {socialMedia.icon}
                       </IconButton>
@@ -74,8 +76,11 @@ const socialMediaLinks = [
                     <IconButton 
                         border='1px'
                         borderColor='gray.400'
-                        rounded={'full'} _hover={{ bg: 'transparent' }} bg='transparent' aria-label='email'>
-                      <EmailIcon boxSize='35px' />
+                        rounded={'full'} 
+                        boxSize={{base:'2.5em', md:'50px'}}
+                        fontSize={{ base: "20px", md: "35px" }}
+                        _hover={{ bg: 'transparent' }} bg='transparent' aria-label='email'>
+                      <EmailIcon />
                     </IconButton>
                   </Link>
                 </HStack>

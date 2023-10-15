@@ -80,8 +80,10 @@ const HeroSection = () => {
             Empowering Tech Enthusiasts and Innovators
           </Text>
           <Collapse 
-            startingHeight={50} 
             in={show}
+            startingHeight={50}
+            animateOpacity
+            transition={{exit: {delay: 0.5}, enter: {duration: 0.5}}} 
           >
             <Text
               className={josefin_Sans.className}
