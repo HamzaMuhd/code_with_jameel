@@ -37,6 +37,7 @@ const Service = () => {
                     flexDirection={{base:"column", md:"row"}}
                     gap={50}
                     w='100%'
+                    justifyContent={'center'}
                 >
                     <Box 
                         w={{base:"100%", md:"370px"}}
