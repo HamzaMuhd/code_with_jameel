@@ -1,8 +1,6 @@
 'use client'
 
-import { Box, Grid, Text, Heading, Flex } from "@chakra-ui/react";
-import Image from "next/image";
-import Link from "next/link";
+import { Box, Text, Heading, Flex } from "@chakra-ui/react";
 import students from "@/app/students";
 import { Roboto, Josefin_Sans } from "next/font/google";
 

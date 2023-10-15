@@ -13,7 +13,7 @@ const students =[
     },
     {
         "id": "3",
-        "name": "Abdulmannan Tahir",
+        "name": "Abdulmannan M. Tahir",
         "position": "Backend Developer", 
         "image": "/abdul.jpg"           
     },
@@ -25,7 +25,7 @@ const students =[
     },
     {
         "id": "5",
-        "name": "Muhammad A Bello",
+        "name": "Muhammad A. Bello",
         "position": "Frontend Developer",  
         "image": "/muhammad.jpg"          
     },
