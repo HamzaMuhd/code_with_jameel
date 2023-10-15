@@ -39,15 +39,15 @@ const NumberOfStudent = () => {
             >
                 <VStack>
                     <Heading className={roboto.className} >23+</Heading>
-                    <Text className={roboto.className} >HTML, CSS, JavaScript, Python</Text>
+                    <Text className={roboto.className} >Skill Acquisition</Text>
                 </VStack>
                 <VStack>
                     <Heading className={roboto.className} >12</Heading>
-                    <Text className={roboto.className}  >Frontend Engineers</Text>
+                    <Text className={roboto.className}  >Project Collaborators</Text>
                 </VStack>
                 <VStack>
-                    <Heading className={roboto.className} >4</Heading>
-                    <Text className={roboto.className}  >Backend Engineers</Text>
+                    <Heading className={roboto.className} >12</Heading>
+                    <Text className={roboto.className}  >Employees</Text>
                 </VStack>
             </HStack>
         </Box>

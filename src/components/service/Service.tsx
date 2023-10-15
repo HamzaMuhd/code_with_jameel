@@ -57,7 +57,8 @@ const Service = () => {
                             <RiGraduationCapFill size={48} /> {/* Adjust the size as needed */}
                         </div>
                         <Heading textAlign="justify" className={roboto.className}>Education</Heading>
-                        <Text textAlign={{ base:'center', md:'start' }} className={josefin_Sans.className}>We&apos;re dedicated to offering top-notch tech education to Nigerian youth, equipping them with expertise to excel in the digital era through structured curriculum and hands-on experience.</Text>
+                        <Text textAlign={{ base:'center', md:'start' }} className={josefin_Sans.className}  fontSize={20}>Skill Development</Text>
+                        <Text textAlign={{ base:'center', md:'start' }} className={josefin_Sans.className}>Whether you&apos;re a seasoned developer or just starting your tech journey, we offer a platform for skill development. Choose your area of interest, and let us guide you towards mastery.</Text>
                     </Box>
                     <Box 
                         w={{base:"100%", md:"370px"}}
@@ -77,7 +78,8 @@ const Service = () => {
                             <RiTimeFill size={48} />{/* Adjust the size as needed */}
                         </div>
                         <Heading textAlign="justify" className={roboto.className}>Experience</Heading>
-                        <Text textAlign={{ base:'center', md:'start' }} className={josefin_Sans.className}>We provide a supportive environment for students to apply their knowledge in real-world scenarios through projects, hackathons, and mentorship, paving their path to success</Text>
+                        <Text textAlign={{ base:'center', md:'start' }} className={josefin_Sans.className}  fontSize={20}>Project Collaboration</Text>
+                        <Text textAlign={{ base:'center', md:'start' }} className={josefin_Sans.className}>We believe that the best way to learn and grow is by working on real-world projects. CodeWithJameel provides opportunities for hands-on experience through collaborative projects.</Text>
                     </Box>
                     <Box 
                         w={{base:"100%", md:"370px"}}
@@ -97,7 +99,8 @@ const Service = () => {
                             <RiBriefcaseFill size={48} /> {/* Adjust the size as needed */}
                         </div>
                         <Heading textAlign="justify" className={roboto.className}>Employement</Heading>
-                        <Text textAlign={{ base:'center', md:'start' }} className={josefin_Sans.className} >We prepare students for the job market and connect them with tech industry opportunities. Partnering with businesses, we create employment pathways and internships. </Text>
+                        <Text textAlign={{ base:'center', md:'start' }} className={josefin_Sans.className}  fontSize={20}>Business Focus</Text>
+                        <Text textAlign={{ base:'center', md:'start' }} className={josefin_Sans.className} >It&apos;s not just about learning; we are passionate about innovation. Join us, and you&apos;ll have the chance to work on projects that have real-world applications and the potential to turn into viable businesses. </Text>
                     </Box>
                 </HStack>
             </VStack>

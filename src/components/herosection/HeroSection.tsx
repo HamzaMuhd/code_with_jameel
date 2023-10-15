@@ -20,7 +20,7 @@ const HeroSection = () => {
 
   useEffect(() => {
     // Simulate the typewriter effect for the header text
-    const textToType = "Welcome to Strong Community of Nigerian Developers";
+    const textToType = "Welcome to CodeWithJameel";
     let currentIndex = 0;
 
     const typingInterval = setInterval(() => {
@@ -69,13 +69,21 @@ const HeroSection = () => {
             className={josefin_Sans.className}
             textAlign="center"
             lineHeight="24px"
+            fontSize={22}
+            zIndex={1}
+            pt={3}
+            pb={5}
+          >
+            Empowering Tech Enthusiasts and Innovators
+          </Text>
+          <Text
+            className={josefin_Sans.className}
+            textAlign="center"
+            lineHeight="24px"
             fontSize={18}
             zIndex={1}
           >
-            A community of passionate coders, eager to learn the latest tech
-            trends, and looking to connect with like-minded individuals.
-            CodeWithJameel is a gateway to a vibrant and supportive
-            community of developers from all corners of Nigeria.
+            CodeWithJameel is where IT excellence meets community! We&apos;re a passionate group of IT specialists from across Nigeria, eager to learn the latest tech trends and connect with like-minded individuals. Join us to enhance your skills and be part of a vibrant community. Whether you&apos;re an aspiring member or an investor, together, we&apos;re shaping a future where innovation thrives, skills are honed, and impactful business solutions are created. Join us on this extraordinary journey of knowledge, collaboration, and success!
           </Text>
           <Button
             size="lg"
@@ -90,7 +98,7 @@ const HeroSection = () => {
               borderColor:'white',
             }}
           >
-            Donate
+            Read more
           </Button>
         </Flex>
       </Container>
