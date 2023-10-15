@@ -83,10 +83,10 @@ const HeroSection = () => {
             startingHeight={50} 
             in={show}
             className={josefin_Sans.className}
-            lineHeight="24px"
-            fontSize={18}
-            zIndex={1}
-            color='white'
+            // lineHeight="24px"
+            // fontSize={18}
+            // zIndex={1}
+            // color='white'
           >
             CodeWithJameel is where IT excellence meets community! We&apos;re a passionate group of IT specialists from across Nigeria, eager to learn the latest tech trends and connect with like-minded individuals. Join us to enhance your skills and be part of a vibrant community. Whether you&apos;re an aspiring member or an investor, together, we&apos;re shaping a future where innovation thrives, skills are honed, and impactful business solutions are created. Join us on this extraordinary journey of knowledge, collaboration, and success!
           </Collapse>
