@@ -3,7 +3,7 @@
 import Navbar from "../navbar/Navbar";
 import React, { useState, useEffect } from "react";
 import { Roboto, Josefin_Sans } from "next/font/google";
-import { Box, Center, Heading, Collapse, Text, VStack, Button, Flex, Container } from "@chakra-ui/react";
+import { Box, Heading, Collapse, Text, Button, Flex, Container } from "@chakra-ui/react";
 
   const roboto = Roboto({
     weight: '100',
@@ -90,8 +90,8 @@ const HeroSection = () => {
               textAlign="center"
               lineHeight="24px"
               fontSize={18}
-              zIndex={1}
-              color="#fff"
+              color='#fff'
+              // zIndex={1}
             >
               CodeWithJameel is where IT excellence meets community! We&apos;re a passionate group of IT specialists from across Nigeria, eager to learn the latest tech trends and connect with like-minded individuals. Join us to enhance your skills and be part of a vibrant community. Whether you&apos;re an aspiring member or an investor, together, we&apos;re shaping a future where innovation thrives, skills are honed, and impactful business solutions are created. Join us on this extraordinary journey of knowledge, collaboration, and success!
             </Text>

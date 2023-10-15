@@ -10,8 +10,8 @@ import {
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { Roboto, Josefin_Sans } from "next/font/google";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { EmailIcon } from "@chakra-ui/icons";
+import { FaXTwitter, FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 
   const roboto = Roboto({
       weight: '100',
@@ -25,12 +25,12 @@ import { EmailIcon } from "@chakra-ui/icons";
 
   const socialMediaLinks = [
     {
-      icon: <FaFacebook color='blue' />,
+      icon: <FaFacebookF color='blue' />,
       label: 'facebook',
       link: 'https://www.facebook.com/profile.php?id=61552373251396&mibextid=ZbWKwL',
     },
     {
-      icon: <FaTwitter color='blue' />,
+      icon: <FaXTwitter color='black' />,
       label: 'twitter',
       link: 'https://twitter.com/Codewithjameel?t=YSaFmhfeaClCRkIpsLvYUQ&s=09',
     },
@@ -40,7 +40,7 @@ import { EmailIcon } from "@chakra-ui/icons";
       link: 'https://www.instagram.com/invites/contact/?i=19zvqga1gcdm8&utm_content=sofwqvo',
     },
     {
-      icon: <FaLinkedin color='blue' />,
+      icon: <FaLinkedinIn color='blue' />,
       label: 'linkedin',
       link: 'http://www.linkedin.com/in/jameel-wubni-05aa96295',
     },
