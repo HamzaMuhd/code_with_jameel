@@ -57,8 +57,8 @@ const LatestProjects = () => {
                         mx='145px'
                         mb='80px'
                     >   
-                        <Text textAlign={{ base:'justify', md:'start' }} fontSize={{ base:'16px', }} className={josefin_Sans.className}>
-                            Get ready for a fintech game-changer that&apos;s about to redefine your financial world! CodeWithJameel Community has been quietly crafting KashCycle, a groundbreaking web app that&apos;s set to make waves. Be the first in line to unveil our truly extraordinary fintech experience. Follow us on social media, because something big is on the horizon, and we can&apos;t wait to share it with you. Brace yourself for KashCycle – it&apos;s not just an app; it&apos;s a revolution!
+                        <Text textAlign='justify' fontSize={{ base:'16px', }} className={josefin_Sans.className}>
+                            Get ready for a fintech game-changer that&apos;s about to redefine your financial world! CodeWithJameel Community of <span style={{ fontWeight:'900' }}>developers and innovators</span> have been quietly crafting KashCycle, a groundbreaking web app that&apos;s set to make waves. <span style={{ fontWeight:'900' }}>Be the first in line to unveil our truly extraordinary fintech experience.</span> Follow us on social mediato <span style={{ fontWeight:'900' }}>get updates</span>, because something big is on the horizon, and we can&apos;t wait to share it with you. Brace yourself for KashCycle – it&apos;s not just an app; it&apos;s a revolution!
                         </Text>
                         <Link href="https://kashcycle.com.ng" passHref>
                             <Button
@@ -79,16 +79,6 @@ const LatestProjects = () => {
                         </Link>
                     </Box>
                 </HStack>
-            {/* <HStack
-            gap={5}
-            align='flex-start'
-            flexDirection={{base:"column", md:"row"}}
-            width='25%'
-            pt='100px'
-            pl='100px'
-            >
-            <Text textAlign="justify" className={josefin_Sans.className}>KashCycle is an innovative and ongoing project initiated by CodeWithJameel, aimed at revolutionizing thrift contribution practices, commonly known as ADASHE within Nigeria and beyond. This digital platform seeks to modernize and streamline the traditional savings and contribution system, making it more accessible, efficient, and secure for users.</Text>
-            </HStack> */}
             </Box>
         </Box>
     );

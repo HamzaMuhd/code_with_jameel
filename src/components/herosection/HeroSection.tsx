@@ -1,9 +1,9 @@
 'use client'
 
 import Navbar from "../navbar/Navbar";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Roboto, Josefin_Sans } from "next/font/google";
-import { Box, Center, Heading, Text, VStack, Button, Flex, Container } from "@chakra-ui/react";
+import { Box, Center, Heading, Collapse, Text, VStack, Button, Flex, Container } from "@chakra-ui/react";
 
   const roboto = Roboto({
     weight: '100',
@@ -16,7 +16,10 @@ import { Box, Center, Heading, Text, VStack, Button, Flex, Container } from "@ch
   })
 
 const HeroSection = () => {
+
   const [headerText, setHeaderText] = useState("");
+  const [show, setShow] = React.useState(false)
+  const handleToggle = () => setShow(!show)
 
   useEffect(() => {
     // Simulate the typewriter effect for the header text
@@ -56,7 +59,7 @@ const HeroSection = () => {
 
       <Navbar />
       <Container maxW='4xl' pt={{ base:'10em', md:'160px', lg:'170px' }}>
-        <Flex p='5' flexDir='column' align='center'>
+        <Flex p='5' flexDir='column' align='center' color='white'>
           <Heading
             textAlign="center"
             lineHeight={["45px", "60px"]}
@@ -76,20 +79,23 @@ const HeroSection = () => {
           >
             Empowering Tech Enthusiasts and Innovators
           </Text>
-          <Text
+          <Collapse 
+            startingHeight={50} 
+            in={show}
             className={josefin_Sans.className}
-            textAlign="center"
             lineHeight="24px"
             fontSize={18}
             zIndex={1}
+            color='white'
           >
             CodeWithJameel is where IT excellence meets community! We&apos;re a passionate group of IT specialists from across Nigeria, eager to learn the latest tech trends and connect with like-minded individuals. Join us to enhance your skills and be part of a vibrant community. Whether you&apos;re an aspiring member or an investor, together, we&apos;re shaping a future where innovation thrives, skills are honed, and impactful business solutions are created. Join us on this extraordinary journey of knowledge, collaboration, and success!
-          </Text>
+          </Collapse>
           <Button
             size="lg"
             mt={{ base:'10', md:`${5}` }}
             color="black"
             bg="white"
+            onClick={handleToggle}
             className={josefin_Sans.className}
             _hover={{
               bg: "black",
@@ -98,7 +104,7 @@ const HeroSection = () => {
               borderColor:'white',
             }}
           >
-            Read more
+            Read {show ? 'less' : 'more'}
           </Button>
         </Flex>
       </Container>
