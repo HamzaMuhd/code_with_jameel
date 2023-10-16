@@ -91,7 +91,7 @@ const Navbar: React.FC = () => {
                         <MenuItem  as='a' href='#service'>
                         Service
                         </MenuItem>
-                        <MenuItem  as='a' href='#contact'>
+                        <MenuItem  as='a' href='mailto:info@codewithjameel.org.ng'>
                         Contact
                         </MenuItem>
                     </MenuList>
