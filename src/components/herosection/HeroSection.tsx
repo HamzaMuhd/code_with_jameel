@@ -3,23 +3,22 @@
 import Navbar from "../navbar/Navbar";
 import React, { useState, useEffect } from "react";
 import { Roboto, Josefin_Sans } from "next/font/google";
-import { Box, Heading, Collapse, Text, Button, Flex, Container } from "@chakra-ui/react";
+import { Box, Heading, Text, Button, Flex, Container } from "@chakra-ui/react";
 
-  const roboto = Roboto({
-    weight: '100',
-    subsets: ['latin'],
-  })
+const roboto = Roboto({
+  weight: '100',
+  subsets: ['latin'],
+});
 
-  const josefin_Sans = Josefin_Sans({
-    weight: '300',
-    subsets: ['latin'],
-  })
+const josefin_Sans = Josefin_Sans({
+  weight: '300',
+  subsets: ['latin'],
+});
 
 const HeroSection = () => {
-
   const [headerText, setHeaderText] = useState("");
-  const [show, setShow] = React.useState(false)
-  const handleToggle = () => setShow(!show)
+  const [show, setShow] = useState(false);
+  const handleToggle = () => setShow(!show);
 
   useEffect(() => {
     // Simulate the typewriter effect for the header text
@@ -35,6 +34,8 @@ const HeroSection = () => {
       }
     }, 60); // Adjust the typing speed as needed (in milliseconds)
   }, []);
+
+  const textContent = "CodeWithJameel is where IT excellence meets community! We're a passionate group of IT specialists from across Nigeria, eager to learn the latest tech trends and connect with like-minded individuals. Join us to enhance your skills and be part of a vibrant community. Whether you're an aspiring member or an investor, together, we're shaping a future where innovation thrives, skills are honed, and impactful business solutions are created. Join us on this extraordinary journey of knowledge, collaboration, and success.";
 
   return (
     <Box
@@ -58,7 +59,7 @@ const HeroSection = () => {
       ></Box>
 
       <Navbar />
-      <Container maxW='4xl' pt={{ base:'8em', md:'160px', lg:'170px' }}>
+      <Container maxW='4xl' pt={{ base: '8em', md: '160px', lg: '170px' }}>
         <Flex p='5' flexDir='column' align='center' color='white'>
           <Heading
             textAlign="center"
@@ -79,26 +80,15 @@ const HeroSection = () => {
           >
             Empowering Tech Enthusiasts and Innovators
           </Text>
-          <Collapse 
-            in={show}
-            startingHeight={50}
-            animateOpacity
-            transition={{exit: {delay: 0.5}, enter: {duration: 0.5}}} 
+          <span
+            className={josefin_Sans.className}
+            style={{ textAlign: 'center', lineHeight: '24px', fontSize: '18', color: 'white' }}
           >
-            <Text
-              className={josefin_Sans.className}
-              textAlign="center"
-              lineHeight="24px"
-              fontSize={18}
-              color='#fff'
-              // zIndex={1}
-            >
-              CodeWithJameel is where IT excellence meets community! We&apos;re a passionate group of IT specialists from across Nigeria, eager to learn the latest tech trends and connect with like-minded individuals. Join us to enhance your skills and be part of a vibrant community. Whether you&apos;re an aspiring member or an investor, together, we&apos;re shaping a future where innovation thrives, skills are honed, and impactful business solutions are created. Join us on this extraordinary journey of knowledge, collaboration, and success!
-            </Text>
-          </Collapse>
+            {show ? textContent : textContent.substring(0, 150)} {/* Display textContent up to 150 characters */}
+          </span>
           <Button
             size="lg"
-            mt={{ base:'10', md:`${5}` }}
+            mt={{ base: '10', md: `${5}` }}
             color="black"
             bg="white"
             onClick={handleToggle}
@@ -106,8 +96,8 @@ const HeroSection = () => {
             _hover={{
               bg: "black",
               color: "white",
-              border:'2px',
-              borderColor:'white',
+              border: '2px',
+              borderColor: 'white',
             }}
           >
             Read {show ? 'less' : 'more'}
