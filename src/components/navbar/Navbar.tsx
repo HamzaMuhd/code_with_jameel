@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
                         <CustomScrollLink to="/">Home</CustomScrollLink>
                         <CustomScrollLink to="about">About</CustomScrollLink>
                         <CustomScrollLink to="service" >Service</CustomScrollLink>
-                        <CustomScrollLink to="contact">Contact</CustomScrollLink>
+                        <CustomScrollLink to='mailto:info@codewithjameel.org.ng'>Contact</CustomScrollLink>
                         </Show>                
                     </HStack>
                     <Hide above="lg">

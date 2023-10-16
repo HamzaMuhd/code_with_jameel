@@ -80,12 +80,12 @@ const HeroSection = () => {
           >
             Empowering Tech Enthusiasts and Innovators
           </Text>
-          <span
-            className={josefin_Sans.className}
-            style={{ textAlign: 'center', lineHeight: '24px', fontSize: '18', color: 'white' }}
-          >
-            {show ? textContent : textContent.substring(0, 150)} {/* Display textContent up to 150 characters */}
-          </span>
+            <span
+              className={josefin_Sans.className}
+              style={{ textAlign: 'center', lineHeight: '24px', fontSize: '18', color: 'white' }}
+            >
+              {show ? textContent : textContent.substring(0, 150)} {/* Display textContent up to 150 characters */}
+            </span>
           <Button
             size="lg"
             mt={{ base: '10', md: `${5}` }}
