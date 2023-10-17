@@ -71,15 +71,15 @@ const Navbar: React.FC = () => {
                     <Hide above="lg">
                     <Menu>
                     <MenuButton
-                    as={IconButton}
-                            aria-label='Options'
-                            icon={<HamburgerIcon 
-                                color='white'  
-                                _hover={{
-                                    bg: "white",
-                                    color: "black",
-                                }}/>}
-                            variant='outline'
+                        as={IconButton}
+                        aria-label='Options'
+                        icon={<HamburgerIcon 
+                            color='white'  
+                            _hover={{
+                                bg: "white",
+                                color: "black",
+                            }}/>}
+                        variant='outline'
                     />
                     <MenuList color='black' className={roboto.className} >
                         <MenuItem  as='a' href='#'>
